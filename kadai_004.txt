@@ -1,0 +1,36 @@
+PS C:\study> cd C:\task
+PS C:\task>  mkdir git_challenge
+
+
+    ディレクトリ: C:\task
+
+
+Mode                 LastWriteTime         Length Nam
+                                                  e  
+----                 -------------         ------ ---
+d-----        2023/11/12      1:55                git
+                                                  _ch
+                                                  all
+                                                  eng 
+                                                  e   
+
+
+PS C:\task> cd git_challenge
+PS C:\task\git_challenge> git init
+Initialized empty Git repository in C:/task/git_challenge/.git/
+PS C:\task\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\task\git_challenge> git add hello_world.txt
+PS C:\task\git_challenge> git commit -m　"hello_word.t
+xtを追加”
+[main (root-commit) 02116e8] hello_word.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\task\git_challenge> git add hello_world.txt
+PS C:\task\git_challenge> git commit -m "日本語訳を追
+記”
+[main 0001f41] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)       
+PS C:\task\git_challenge> git log --oneline
+0001f41 (HEAD -> main) 日本語訳を追記
+02116e8 hello_word.txtを追加
